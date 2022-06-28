@@ -10,12 +10,12 @@ app.use(express.json())
 const PORT = process.env.PORT || 3000
 app.use(express.urlencoded({extended: true}))
 
-app.use(express.static('/docs'));
+app.use(express.static('public'));
 app.get('/', (req, res)=>{
-    res.sendFile(path.resolve(__dirname ,"docs",'html', "index.html"))
+    res.sendFile(path.resolve(__dirname ,"public",'html', "index.html"))
 })  
 app.get('/ABOUT.html', (req, res)=>{
-    res.sendFile(path.resolve(__dirname ,"docs",'html', "About.html"))
+    res.sendFile(path.resolve(__dirname ,"public",'html', "About.html"))
 }) 
 
 app.post('/form',async(req, res)=>{
@@ -29,7 +29,7 @@ app.post('/form',async(req, res)=>{
 })
 
 app.get('/menu.html', (req,res)=>{
-    res.sendFile(path.resolve(__dirname, "docs", "html","Menu.html"))
+    res.sendFile(path.resolve(__dirname, "public", "html","Menu.html"))
 })
 
 
