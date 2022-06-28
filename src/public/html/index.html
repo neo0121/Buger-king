@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>order your favoutite food</title>
+
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
+        <link rel="stylesheet" href="/css/utilites.css"  type="text/css">
+    </head>
+    <body>
+        <!-- logo and name -->
+        <div class="logo">
+            <img src="/img/burger.png" alt="">
+            <div class="logoname">Burger King cafe.</div>
+        </div>
+
+        <!-- NABAR -->
+        <nav class="navbar max-width">
+            <ul>
+                <li class="navbar-items" id="activeselector">
+                    <a href="/">HOME</a>
+                </li>
+                <li class="navbar-items" id="navbar-itemsid2">
+                    <a href="/menu.html">MENU</a>
+                </li>
+               
+                <li class="navbar-items" id="navbar-itemsid4">
+                    <a href="#OUR-RESERVATIONS">RESERVATION</a>
+                </li>
+                <li class="navbar-items" id="navbar-itemsid5">
+                    <a href="./ABOUT.html">ABOUT</a>
+                </li>
+                <li class="navbar-items" id="navbar-itemsid6">
+                    <a href="#contactandlocationid">CONTACT&LOCATION</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- container -->
+        <div class="container">
+            <div class="container-heading">BURGER HOUSE</div>
+            <P class="container-para">different burger and different taste.</P>
+        </div>
+
+
+        <!-- INTRO -->
+        <div class="intro">
+            <h3>WHAT MAKE US DIFFERENT</h3>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quia facilis id non nihil eaque labore ex, explicabo enim, quas facere sequi saepe distinctio modi repudiandae libero obcaecati at, amet ut assumenda quae! At nesciunt quam cum ullam! Sit, est!</P>
+        </div>
+
+
+        <!-- reservation -->
+
+        <div class="reservation" id="OUR-RESERVATIONS">
+            <div class="para-and-heading">
+                <h1>MAKE A RESERVATION</h1>
+                <P>
+                    please enter date,time and number of people .</P>
+            </div>
+
+            <div class="form-container">
+                <form method="POST" action="/form"  id="formsumbit">
+                    <input class = "formclass1" type="date" name="date" id="date">
+                    <input class = "formclass1" type="time" name="time" id="time" placeholder="ENTER TIME">
+                    <input class = "formclass1" type="number" name="numberofpeople" id="number" placeholder="NUMBER OF PEOPLE">
+                    <button id="btn11" class="btn" type="submit" value="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- GALLARY -->
+        <div class="gallary">
+            <h1>GALLERY</h1>
+        </div>
+
+        <!-- GALLARY PHOTOS -->
+        <div class="gallery-photos">
+            <div class="subgallery-photos">
+                <img class="g-photos" src="/img/g1.jpg" alt="" srcset="">
+                <img class="g-photos" src="/img/g2.jpg" alt="" srcset="">
+                <img class="g-photos" src="/img/g5.jpg" alt="" srcset="">
+                <img class="g-photos" src="/img/g8.jpg" alt="" srcset="">
+                <img class="g-photos" src="/img/g9.jpg" alt="" srcset="">
+                <img class="g-photos" src="/img/g4.jpg" alt="" srcset="">
+                <img class="g-photos" src="/img/g6.jpg" alt="" srcset="">
+                <img class="g-photos" src="/img/g1.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+        <!-- contact and location -->
+
+        <div class="contactandlocation" id="contactandlocationid">
+            <h2>CONTACT AND LOCATION</h2>
+            <div class="contact">
+                <p>TELL US WHAT YOU THINK AND HOW WE'RE DOING</p>
+                <form action="/formsubmison" method="POST" class="contactform">
+
+                    <div id="form1">
+                        <input class="input" type="name1" name="name1" id="text1" placeholder="Name">
+                        <input class="input" type="email" name="email" id="email1" placeholder="Email">
+                        <input class="input" type="number" name="number" id="number1" placeholder="Phone Number">
+                    </div>
+
+                    <div>
+                        <textarea name="textarea" type="textarea" id="form2" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                    </div>
+                    <button class="btn2" type="submit" value="submit">SUBMIT</button>
+                </form>
+            </div>
+
+            <div class="location">
+                <p>
+                    <span>500 Terry Francois St. San Francisco, CA 94158
+                    </span>
+                    <span>Monday to Friday 12pm-11pm / Saturday to Sunday 12pm-1am</span>
+                </p>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14007.24110160758!2d77.20576381698028!3d28.635447801889498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd48389b159b%3A0xf34e13dfa775599e!2sSandoz%20Restaurant%20(Shivaji%20Stadium)!5e0!3m2!1sen!2sin!4v1643651419141!5m2!1sen!2sin" width="570" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+
+        <!--footer -->
+        <footer class="footer">
+            2022 copyright reserved. proudly created by pratik singh
+            <footer>
+
+                <script src="./js/index.js"></script>
+                <!-- <script src="./js/reservation.js"></script>
+                <script src="../app.js"></script> -->
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+            </body>
+        </html>
+    </body>
+</html>
